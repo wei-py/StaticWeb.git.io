@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>StaticWeb</title>
+    <title>仿穷游</title>
     <meta name="keysword" content="机票，酒店，旅游攻略，签证，出国，自由行" />
     <meta name="area" content="北汕广深" />
     <link rel="stylesheet" href="./css/css.css" />
@@ -195,10 +195,33 @@
 
     <!-- banner -->
     <section class="banner">
-        <img src="images/banner1.jpg" alt="">
+        <ul id="carousel_list" class="carousel_list">
+            <li>
+                <img src="images/banner1.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/banner2.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/banner3.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/banner4.jpg" alt="">
+            </li>
+            <li>
+                <img src="images/banner5.jpg" alt="">
+            </li>
+        </ul>
+        <ol class="circles" id="circle_ol">
+            <li data-n="0" class="current"></li>
+            <li data-n="1"></li>
+            <li data-n="2"></li>
+            <li data-n="3"></li>
+            <li data-n="4"></li>
+        </ol>
         <div class="center-wrap">
-            <a href="" class="leftbtn"></a>
-            <a href="" class="rightbtn"></a>
+            <a href="javascript:;" id="left_btn" class="leftbtn"></a>
+            <a href="javascript:;" id="right_btn" class="rightbtn"></a>
             <nav class="banner-nav">
                 <ul id="banner-nav-ul">
                     <li class="hot" data-t="hot">
@@ -271,7 +294,7 @@
                     </li>
                 </ul>
                 <div class="menus-box">
-                    <div class="menu current" data-t="hot">
+                    <div class="menu" data-t="hot">
                         <dl>
                             <dt>港澳台</dt>
                             <dd>
@@ -594,6 +617,9 @@
             </nav>
         </div>
     </section>
+
+    <script src="js/carousel.js"></script>
+    <script src="js/menu.js"></script>
 
     <!-- 热门广告 -->
     <section class="hot-ads clearfix">

@@ -277,16 +277,26 @@ body {
 
 .banner {
     position: relative;
+    overflow: hidden;
 }
 
-.banner img {
+.banner .carousel_list {
+    width: 600%;
+    /* 清除浮动 */
+    overflow: hidden;
+    /* translateX中的百分数表示相对于它本身的宽度的多少倍 */
+    /* transform: translateX(-33.333%); */
+    transition: transform 0.5s ease 0s;
+}
+.banner .carousel_list li {
+    float: left;
+    width: 16.666%;
+}
+.banner .carousel_list li img {
     width: 100%;
-    min-width: 1152px;
-    /* 图片可能和盒子的底部产生一些缝隙，此时可以使用一个技巧 */
-    /* 图片不会尝试缝隙 */
+    /* 白边的处理 */
     vertical-align: middle;
 }
-
 .banner .center-wrap {
     position: absolute;
     top: 0;
