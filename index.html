@@ -200,7 +200,7 @@
     </header>
 
     <!-- banner -->
-    <section class="banner">
+    <section class="banner" id="banner">
         <ul id="carousel_list" class="carousel_list">
             <li>
                 <img src="images/banner1.jpg" alt="">
@@ -218,9 +218,16 @@
                 <img src="images/banner5.jpg" alt="">
             </li>
         </ul>
+        <ol class="circles" id="circle_ol">
+            <li data-n="0" class="current"></li>
+            <li data-n="1"></li>
+            <li data-n="2"></li>
+            <li data-n="3"></li>
+            <li data-n="4"></li>
+        </ol>
         <div class="center-wrap">
-            <a href="" class="leftbtn"></a>
-            <a href="" class="rightbtn"></a>
+            <a href="javascript:;" id="left_btn" class="leftbtn"></a>
+            <a href="javascript:;" id="right_btn" class="rightbtn"></a>
             <nav class="banner-nav">
                 <ul id="banner-nav-ul">
                     <li class="hot" data-t="hot">
@@ -293,7 +300,7 @@
                     </li>
                 </ul>
                 <div class="menus-box">
-                    <div class="menu current" data-t="hot">
+                    <div class="menu" data-t="hot">
                         <dl>
                             <dt>港澳台</dt>
                             <dd>
